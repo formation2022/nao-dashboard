@@ -1,0 +1,17 @@
+<html>
+  <head>
+    <title>Nao Data Dashboard</title>
+  </head>
+  <body>
+    <h1>Nao Data Dashboard</h1>
+      <div class="visualization">
+      <div id="pieChart"></div>
+      <div id="barChart"></div>
+    </div>
+  </body>
+  <script src="https://d3js.org/d3.v5.min.js"></script>
+  <script>
+   const pieChartDataUrl = "{{ url_for('get_piechart_data') }}";
+   const barChartDataUrl = "{{ url_for('get_barchart_data') }}";
+  </script>
+</html>
